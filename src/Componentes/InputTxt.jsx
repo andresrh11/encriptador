@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export default function InputTxt({setEncrip}){
+export default function InputTxt({setEncrip, encrip}){
     function handleChange(e){
         console.log(e.target.value)
         setEncrip(e.target.value)

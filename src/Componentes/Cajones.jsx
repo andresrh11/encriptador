@@ -1,9 +1,15 @@
+import { useEffect } from "react"
 import styled from "styled-components"
 
-export default function Cajones (){
+export default function Cajones ({encrip}){
+    
+    useEffect(()=>{
+        
+    },[encrip])
     return(<CajonTxt>
-        <h1>Ningún mensaje fue encontrado</h1>
-        <h3>Ingresa el texto que quieran encriptar o desencriptar</h3>
+        {encrip == "" ?
+        <><h1>Ningún mensaje fue encontrado</h1>
+        <h3>Ingresa el texto que quieran encriptar o desencriptar</h3></>:<h3>{encrip}</h3>}
     </CajonTxt>)
 }
 

@@ -5,23 +5,55 @@ import InputTxt from "./InputTxt"
 import styled from "styled-components"
 import alura from "../../src/alura.svg"
 import { useState } from "react"
+
+
 export default function Home (){
-    const [encrip,setEncrip]=useState("");
+    let [encrip, setEncrip]=useState("");
+    const arr = encrip.split("")
+    let [desencript, setDesencrip]=useState("")
+     const [contador,setContador] = useState(0)
+     
+    const encriptador = () => {
+      setDesencrip(encrip) ;  
+        setContador(1)
+       console.log(contador)
+
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i]==="a"){
+                arr[i]="ai"
+            }
+            if(arr[i]==="e"){
+                arr[i]="enter"
+            }
+            if(arr[i]==="i"){
+                arr[i]="imes"
+            }
+            if(arr[i]==="o"){
+                arr[i]="ober"
+            }
+            if(arr[i]==="u"){
+                arr[i]="ufat"
+            }             
+    } 
+    setEncrip(arr.join(""))
     
-    encrip.split("")
-    console.log(encrip)
-    for (let i = 0; i < encrip.length; i++) {
-       
-        
     }
+    const desencrip =()=>{
+        setContador(0)
+        setEncrip(desencript)
+        console.log(contador)
+    }
+    
+     
+    
     return(
         <DivHome>
         <img src={alura} alt="" />
-        <InputTxt props={setEncrip} />
+        <InputTxt setEncrip={setEncrip} encrip={encrip}  />
         <DivBotones>
-        <Botones props="Encriptar"/>
-        <BotonDes props="Desencriptar"/></DivBotones>
-        <Cajones />
+        <Botones props="Encriptar" encriptador={encriptador} contador={contador} />
+        <BotonDes props="Desencriptar" desencrip={desencrip} contador={contador} /></DivBotones>
+        <Cajones encrip={encrip} />
         </DivHome>
     )
 }
