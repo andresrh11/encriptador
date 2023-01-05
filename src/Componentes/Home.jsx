@@ -73,7 +73,6 @@ justify-content: space-evenly;
     width: 319px;
     justify-content: space-evenly;
     margin-bottom: 40px; 
-    border: 1px solid red;
 }
 @media  (max-width: 769px) {
    
@@ -98,9 +97,9 @@ img{
     padding-left: 84px;
 }
 @media  (max-width: 376px) {
-    
+    display:block;
    height: auto;
-    background: #E9ECF8;
+    background-color: #E9ECF8;
     
 }
 @media  (max-width: 769px) {

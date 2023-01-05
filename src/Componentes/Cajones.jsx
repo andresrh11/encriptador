@@ -45,7 +45,7 @@ align-items: flex-start;
 padding: 32px;
 gap: 32px;
 
-position: absolute;
+position: none;
 width: 668px;
 height: auto;
 left: 20px;
