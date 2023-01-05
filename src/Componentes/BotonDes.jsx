@@ -35,7 +35,7 @@ export const ButtonStldes = styled.button`
     width: 343px;
     height: 67px;
     color:#0A3871;
-    background: #747373;
+    background: white;
     border-radius: 24px;
 
     margin-top: 15px;

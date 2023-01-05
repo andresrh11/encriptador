@@ -10,10 +10,11 @@ export default function InputTxt({setEncrip, encrip}){
 const InputTx = styled.div`
 display: flex;
 margin-left:200px;
+
 input{
     
     width: auto;
-    height:800px; 
+    height:auto; 
     border:none;
     color: #0A3871;
     background: none;
@@ -24,7 +25,7 @@ input{
     input{        
         position: absolute;
         width: auto;
-        height: 48px;
+        height: auto;
         left: 16px;
         top: 152px;
         font-family: 'Inter';
@@ -32,7 +33,7 @@ input{
         font-weight: 400;
         font-size: 32px;       
         color: #0A3871;
-    
+        border: none;
 }  
 }
 @media  (max-width: 769px) {
