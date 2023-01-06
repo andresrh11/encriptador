@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-export default function Botones ({props, encriptador, contador}){
-    return (<>{contador<1?<ButtonStyled onClick={encriptador}  >
+export default function Botones ({props, encriptador, contador, error}){
+    return (<>{contador<1 && error>0 ?<ButtonStyled onClick={encriptador}  >
         {props} 
     </ButtonStyled>:<ButtonStyledis onClick={encriptador}  >
         {props} 

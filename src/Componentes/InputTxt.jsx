@@ -1,7 +1,31 @@
 import styled from "styled-components"
-
-export default function InputTxt({setEncrip, encrip}){
+export default function InputTxt({setEncrip,setError,arr,error}){
+   
     function handleChange(e){
+        arr.split("")
+        for (let i = 0; i < arr.length; i++) {
+            
+          if(arr[i] === arr[i].toUpperCase()){
+            setError(+1)
+        }
+        var tap=error
+        if(error>0){
+         for (let j = 0; j < arr.length; j++) {
+            if(arr[i] === arr[i].toUpperCase()){
+                setError(+1)
+            }
+            if(error>tap){
+                tap=error
+            }   
+            if(tap===error) {
+                setError(0)
+            }      
+        } 
+
+        }
+        
+        }
+        
         console.log(e.target.value)
         setEncrip(e.target.value)
     }
