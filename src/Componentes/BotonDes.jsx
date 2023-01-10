@@ -27,6 +27,22 @@ export const ButtonStldes = styled.button`
   order: 0;
   flex-grow: 0;
   border: 1px solid #0a3871;
+
+  @media (max-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+    color: #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    border: 1px solid #0a3871;
+  }
   @media (max-width: 376px) {
     display: flex;
     flex-direction: row;
@@ -45,21 +61,6 @@ export const ButtonStldes = styled.button`
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-  }
-  @media (max-width: 769px) {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    width: 332px;
-    height: 67px;
-    color: #0a3871;
-    border-radius: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-    border: 1px solid #0a3871;
   }
 `;
 export const ButtonStl = styled.button`
@@ -77,6 +78,21 @@ export const ButtonStl = styled.button`
   flex: none;
   order: 0;
   flex-grow: 0;
+
+  @media (max-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+    color: #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
   @media (max-width: 376px) {
     display: flex;
     flex-direction: row;
@@ -95,19 +111,5 @@ export const ButtonStl = styled.button`
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-  }
-  @media (max-width: 769px) {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    width: 332px;
-    height: 67px;
-    color: #0a3871;
-    border-radius: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
   }
 `;

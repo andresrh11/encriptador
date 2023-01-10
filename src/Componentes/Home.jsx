@@ -88,11 +88,7 @@ const DivHome = styled.div`
     padding-top: 40px;
     padding-left: 84px;
   }
-  @media (max-width: 376px) {
-    width: 375px;
-    height: 1715px;
-    background-color: #f3f5fc;
-  }
+
   @media (max-width: 769px) {
     /* Light blue/light-blue-100 */
     width: 768px;
@@ -103,6 +99,11 @@ const DivHome = styled.div`
       padding-left: 40px;
     }
   }
+  @media (max-width: 376px) {
+    width: 375px;
+    height: 933px;
+    background-color: #f3f5fc;
+  }
 `;
 const DivBotones = styled.div`
   display: flex;
@@ -110,22 +111,24 @@ const DivBotones = styled.div`
   width: 700px;
   justify-content: space-evenly;
 
-  @media (max-width: 376px) {
-    display: flex;
-    padding-left: 2px;
-    padding-top: 20px;
-    flex-flow: column;
-    width: 345px;
-    justify-content: space-evenly;
-    margin-bottom: 40px;
-  }
   @media (max-width: 769px) {
-    display: flex;
     padding-left: 7px;
     margin-top: 4px;
     width: 768px;
     justify-content: space-evenly;
     margin-bottom: 10px;
+  }
+  @media (max-width: 376px) {
+    padding-left: 2px;
+
+    flex-flow: column;
+    position: absolute;
+    width: 345px;
+    height: auto;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+    left: 15px;
   }
 `;
 
@@ -140,16 +143,25 @@ const Mensaje = styled.div`
   img {
     width: 12px;
     height: 12px;
-
-    padding-bottom: 35px;
+    padding-bottom: 38px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 15px;
+    color: grey;
   }
   @media (max-width: 769px) {
     margin-left: 5px;
     justify-content: left;
 
+    img {
+      padding-bottom: 5px;
+      margin-bottom: 65px;
+    }
+  }
+  @media (max-width: 376px) {
+    margin-left: 5px;
+    justify-content: left;
+    margin-top: 80px;
     img {
       padding-bottom: 5px;
       margin-bottom: 65px;

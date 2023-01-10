@@ -74,6 +74,20 @@ export const ButtonStyledis = styled.button`
   flex: none;
   order: 0;
   flex-grow: 0;
+  
+  @media (max-width: 769px) {
+    border: 1px solid #0a3871;
+    flex-direction: row;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+    background: #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
   @media (max-width: 376px) {
     display: flex;
     flex-direction: row;
@@ -88,18 +102,5 @@ export const ButtonStyledis = styled.button`
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-  }
-  @media (max-width: 769px) {
-    border: 1px solid #0a3871;
-    flex-direction: row;
-    padding: 24px;
-    gap: 8px;
-    width: 332px;
-    height: 67px;
-    background: #0a3871;
-    border-radius: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
   }
 `;

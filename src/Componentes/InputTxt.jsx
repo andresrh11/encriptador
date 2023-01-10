@@ -53,29 +53,13 @@ const InputTx = styled.div`
     line-height: 150%;
     color: #0a3871;
   }
-  @media (max-width: 376px) {
-    display: flex;
-    padding-left: 20px;
-    textarea {
-      position: absolute;
-      width: auto;
-      height: auto;
-      left: 16px;
-      top: 152px;
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 32px;
-      color: #0a3871;
-      border: none;
-    }
-  }
+
   @media (max-width: 769px) {
     width: auto;
     height: 150px;
     textarea {
-      width: auto;
-      height: 48px;
+      width: 500px;
+      height: 300px;
       left: 40px;
       top: 240px;
       font-family: "Inter";
@@ -84,6 +68,23 @@ const InputTx = styled.div`
       font-size: 32px;
       line-height: 150%;
       color: #0a3871;
+    }
+  }
+  @media (max-width: 376px) {
+    display: flex;
+    padding-left: 20px;
+    textarea {
+      position: absolute;
+      width: 340px;
+      height: 200px;
+      left: 16px;
+      top: 152px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      color: #0a3871;
+      border: none;
     }
   }
 `;
